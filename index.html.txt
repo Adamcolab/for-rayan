@@ -1,0 +1,303 @@
+<!doctype html>
+
+<html lang="ckb">
+
+<head>
+
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>For Rio</title>
+
+<style>
+
+:root{
+
+--bg1:#fff0f6;
+
+--bg2:#eef7ff;
+
+--card:#ffffffcc;
+
+--text:#1f2937;
+
+--muted:#6b7280;
+
+--accent:#ff4d8d;
+
+--accent2:#6c7bff;
+
+}
+
+*{box-sizing:border-box}
+
+body{
+
+margin:0;
+
+min-height:100vh;
+
+display:grid;
+
+place-items:center;
+
+font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans Arabic", "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+
+color:var(--text);
+
+background:
+
+radial-gradient(1200px 800px at 15% 20%, var(--bg1), transparent 60%),
+
+radial-gradient(1200px 800px at 85% 80%, var(--bg2), transparent 60%),
+
+linear-gradient(135deg, #ffffff, #f8fafc);
+
+padding:24px;
+
+}
+
+.card{
+
+width:min(560px, 100%);
+
+background:var(--card);
+
+backdrop-filter: blur(10px);
+
+border:1px solid #ffffff;
+
+border-radius:20px;
+
+box-shadow: 0 20px 60px rgba(0,0,0,.10);
+
+padding:28px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.card:before{
+
+content:"";
+
+position:absolute;
+
+inset:-2px;
+
+background: linear-gradient(120deg, rgba(255,77,141,.35), rgba(108,123,255,.25));
+
+filter: blur(18px);
+
+z-index:-1;
+
+}
+
+h1{
+
+margin:0 0 6px;
+
+font-size:28px;
+
+letter-spacing:-0.02em;
+
+}
+
+.subtitle{
+
+margin:0 0 18px;
+
+color:var(--muted);
+
+line-height:1.5;
+
+}
+
+.hero{
+
+display:flex;
+
+gap:16px;
+
+align-items:center;
+
+justify-content:space-between;
+
+flex-wrap:wrap;
+
+margin-top:14px;
+
+}
+
+.badge{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:10px 12px;
+
+border-radius:999px;
+
+background:#ffffff;
+
+border:1px solid rgba(17,24,39,.08);
+
+font-size:14px;
+
+color:var(--muted);
+
+}
+
+.dot{
+
+width:10px;height:10px;border-radius:50%;
+
+background: radial-gradient(circle at 30% 30%, var(--accent), var(--accent2));
+
+box-shadow: 0 0 0 6px rgba(255,77,141,.12);
+
+}
+
+button{
+
+appearance:none;
+
+border:none;
+
+cursor:pointer;
+
+padding:12px 16px;
+
+border-radius:12px;
+
+font-weight:700;
+
+font-size:15px;
+
+color:white;
+
+background: linear-gradient(120deg, var(--accent), var(--accent2));
+
+box-shadow: 0 14px 30px rgba(108,123,255,.22);
+
+transition: transform .12s ease, box-shadow .12s ease;
+
+}
+
+button:hover{ transform: translateY(-1px); box-shadow: 0 18px 38px rgba(108,123,255,.26); }
+
+button:active{ transform: translateY(1px); }
+
+.note{
+
+margin-top:18px;
+
+padding:16px 16px;
+
+border-radius:16px;
+
+background:#ffffff;
+
+border:1px dashed rgba(17,24,39,.18);
+
+line-height:1.9;
+
+font-size:16px;
+
+display:none;
+
+direction: rtl;
+
+text-align: right;
+
+white-space: pre-wrap;
+
+}
+
+.note.show{
+
+display:block;
+
+animation: pop .35s ease-out;
+
+}
+
+@keyframes pop{
+
+from{ transform: translateY(8px); opacity:0; }
+
+to{ transform: translateY(0); opacity:1; }
+
+}
+
+.footer{
+
+margin-top:14px;
+
+font-size:12px;
+
+color:var(--muted);
+
+text-align:center;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<main class="card">
+
+<h1>Rayan (Rio) 💗</h1>
+
+<p class="subtitle">
+
+Just a tiny romantic page… with a little bit of chaos (because it’s you).
+
+</p>
+
+<div class="hero">
+
+<div class="badge"> Rio, press this (don’t be scared)</div>
+
+<button id="revealBtn" type="button">Tap to reveal</button>
+
+</div>
+
+<section id="note" class="note" aria-live="polite">
+
+هاییی  ڕیۆ گوڵ بەخێربێی , ئافەرانن هەر وا دێ و پڕاودم دەکەی دوایەش دەرێی کا کیوتم و لۆ ئەوها دەمبینی وای هەر مندارەکی کیوتی جارجار دو سێ زلەی داوێی گەورە دەبی بەس چنیە خۆشی من بێزارکردنی توە چونکە نووبی ئەنیوەیس بەردەوامبە لەسەر ڕێی خۆت هەر ئەوها بمینێوە زۆر زۆر جوانی و هەردەم ئاگام لێتە ئەگەر لەگەریشت نەبم ( هەر لەگەرتم ) بەدەست خۆشت نیە خۆت ماندی مەکە و هیوام وایە هیواکانت بە زووترین کات (هیوا ) نەمینێن ببنە ڕاستی چونکە شایەنی و زۆر زیاتریش , هاتمە کۆتایی و خاتیمەی ئەو شتە ڕاندۆمەی  ئۆڵوەیز پینکی ئادەم "“
+
+</section>
+
+<div class="footer">Made for Rio. (Handle with care.)</div>
+
+</main>
+
+<script>
+
+const btn = document.getElementById("revealBtn");
+
+const note = document.getElementById("note");
+
+btn.addEventListener("click", () => {
+
+const isShown = note.classList.toggle("show");
+
+btn.textContent = isShown ? "Read again" : "Tap to reveal";
+
+});
+
+</script>
+
+</body>
+
+</html>
